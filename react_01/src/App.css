@@ -46,4 +46,10 @@ nav a{
   background-color: #89116b;
 }
 
+.menu-btn{
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  float: left;
+}
 

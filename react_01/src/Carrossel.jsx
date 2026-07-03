@@ -20,7 +20,7 @@ function Carrossel() {
 
   return (
     <main>
-      <div className="carrossel">
+      <div className="Carrossel">
       <button className="botaoesquerda" onClick={anterior}>
           ◀
         </button>

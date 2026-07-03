@@ -10,7 +10,7 @@ main {
     border-radius: 12px;
   }
   
-  .carrossel {
+  .Carrossel {
     display: flex;
     gap: 16px;
     justify-content: center;

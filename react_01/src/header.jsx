@@ -1,4 +1,5 @@
 import Button from './btn.jsx';
+import menu from './menu.jsx'; 
 
 function Header() {
     return (
@@ -13,6 +14,7 @@ function Header() {
             <a href="/sobre">Sobre nós</a>
         </nav>
         <Button/>
+        <menu/>
       </header>
     );
   }
