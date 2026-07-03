@@ -10,9 +10,11 @@ main {
     border-radius: 12px;
   }
   
-  .carousel {
+  .carrossel {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
   }
   
   .slide {
@@ -27,4 +29,18 @@ main {
     color: white;
     font-size: 24px;
     border-radius: 12px;
+  }
+
+  .imagem{
+    width: 900px;
+    height: 5;
+  }
+
+  .botaodireita{
+    float: right;
+    
+  }
+
+  .botaoesquerda{
+    float: left;
   }
