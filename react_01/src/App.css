@@ -46,10 +46,18 @@ nav a{
   background-color: #89116b;
 }
 
-.menu-btn{
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  float: left;
+.menu-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
 
