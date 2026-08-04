@@ -1,10 +1,10 @@
 import Button from './btn.jsx';
 import Menu from './menu.jsx'; 
 
-function Header() {
+function Header({ onMenuClick }) {
     return (
       <header className="header">
-        <Menu/>
+        <Menu onMenuClick={onMenuClick}/>
         <div className="logo">
           <h1 className="titulo">VEXA</h1>
         </div>

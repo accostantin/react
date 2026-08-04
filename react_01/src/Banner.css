@@ -1,0 +1,54 @@
+.banner-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.banner-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.banner-content {
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+
+    max-width: 350px;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+
+    color: white;
+}
+
+.banner-content p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.banner-btn {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    background: white;
+    color: #3B0A45;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    opacity: .9;
+}

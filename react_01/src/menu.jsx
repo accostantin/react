@@ -1,14 +1,12 @@
-import minhaImagem from './assets/menu.png';
+import minhaImagem from "./assets/menu.png";
 
-function Menu() {
-  const handleClick = () => {
-    console.log('Botão clicado!');
-  };
-
+function Menu({ onMenuClick }) {
   return (
-    <button className='menu-btn' onClick={handleClick}>
-      <img src={minhaImagem} alt="Descrição da imagem"/>
-
+    <button
+      className="menu-btn"
+      onClick={onMenuClick}
+    >
+      <img src={minhaImagem} alt="Menu" />
     </button>
   );
 }
