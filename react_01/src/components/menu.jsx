@@ -1,6 +1,6 @@
 import minhaImagem from './assets/menu.png';
 
-function menu() {
+function Menu() {
   const handleClick = () => {
     console.log('Botão clicado!');
   };
@@ -8,9 +8,9 @@ function menu() {
   return (
     <button className='menu-btn' onClick={handleClick}>
       <img src={minhaImagem} alt="Descrição da imagem"/>
-      <span>Clique aqui</span>
+
     </button>
   );
 }
 
-export default menu;
+export default Menu;
