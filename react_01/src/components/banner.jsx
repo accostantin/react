@@ -18,6 +18,7 @@ function Banner() {
           </p>
 
           <button className="banner-btn"> 
+            Saiba Mais 
           </button>
         </div>
 

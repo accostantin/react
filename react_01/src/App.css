@@ -22,7 +22,7 @@ nav a{
 }
 
 @font-face {
-  font-family: 'Vexa-font'; /* Nome que você vai usar no CSS */
+  font-family: 'Vexa-font';
   src: url('./assets/fonts/Conthrax-SemiBold.woff') format('woff');
   font-weight: 400;
   font-style: normal;
