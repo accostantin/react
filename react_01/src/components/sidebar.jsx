@@ -1,4 +1,4 @@
-import "./sidebar.css";
+import "../assets/css/sidebar.css";
 
 function Sidebar({ isOpen, onClose }) {
   return (

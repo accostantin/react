@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Header from './header.jsx';
-import Button from './btn.jsx';
-import Sidebar from "./sidebar.jsx";
-import Banner from "./banner.jsx";
+import Header from './components/Header.jsx';
+import Button from './components/Button.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import Banner from './components/Banner.jsx';
 
 import './App.css';
 

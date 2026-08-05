@@ -1,5 +1,5 @@
-import Button from './btn.jsx';
-import Menu from './menu.jsx'; 
+import Button from './Button.jsx';
+import Menu from './Menu.jsx'; 
 
 function Header({ onMenuClick }) {
     return (

@@ -1,4 +1,4 @@
-import minhaImagem from "./assets/menu.png";
+import minhaImagem from "../assets/img/menu.png";
 
 function Menu({ onMenuClick }) {
   return (

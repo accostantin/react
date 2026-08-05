@@ -1,5 +1,5 @@
-import "./banner.css";
-import marie from "./assets/marie.png";
+import "../assets/css/banner.css";
+import marie from "../assets/img/marie.png";
 
 function Banner() {
   return (
