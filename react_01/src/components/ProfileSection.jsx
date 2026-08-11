@@ -1,0 +1,108 @@
+import '../assets/css/ProfileSection.css';
+
+import perfil from '../assets/img/ana.png';
+import perfil2 from '../assets/img/isa.png';
+
+function ProfileSection() {
+  return (
+    <main className="profile-section">
+
+
+      {/* TÍTULO */}
+      <div className="profile-title">
+        <h1>Contact Us</h1>
+        <span></span>
+      </div>
+
+      {/* CONTEÚDO */}
+      <div className="contact-container">
+
+        {/* CARD ESQUERDO */}
+        <section className="contact-info">
+
+          <h2>Get In Touch</h2>
+          <div className="title-line"></div>
+
+          {/* PERFIL 1 */}
+          <div className="person">
+            <img src={perfil} alt="Ana Clara" />
+
+            <div>
+              <h3>Ana Clara</h3>
+              <p>123 Main Street, Brasil</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <span>✉</span>
+            <p>anaclara@gmail.com</p>
+          </div>
+
+          <div className="contact-item">
+            <span>☎</span>
+            <p>+55 51 99568-9785</p>
+          </div>
+
+          <div className="contact-item">
+            <span>●</span>
+            <p>@anaclara</p>
+          </div>
+
+          {/* PERFIL 2 */}
+          <div className="person second-person">
+            <img src={perfil2} alt="Isabelle" />
+
+            <div>
+              <h3>Isabelle</h3>
+              <p>123 Main Street, Brasil</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <span>✉</span>
+            <p>isabelle@gmail.com</p>
+          </div>
+
+          <div className="contact-item">
+            <span>☎</span>
+            <p>+55 51 92652-3625</p>
+          </div>
+
+        </section>
+
+
+        {/* FORMULÁRIO */}
+        <section className="contact-form">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+          />
+
+          <textarea
+            placeholder="Your Message"
+          ></textarea>
+
+          <button type="button">
+            Send Message
+          </button>
+
+        </section>
+
+      </div>
+
+      {/* RODAPÉ */}
+      <footer className="profile-footer">
+        ◎ solutionsbluehorizon
+      </footer>
+
+    </main>
+  );
+}
+
+export default ProfileSection;

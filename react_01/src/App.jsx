@@ -4,6 +4,7 @@ import Button from './components/Button.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import Banner from './components/Banner.jsx';
 import Home from './components/Home.jsx';
+import ProfileSection from './components/ProfileSection.jsx';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)}/>
       <Banner />
       <Home />
+      <ProfileSection />
     </div>
   );
 }

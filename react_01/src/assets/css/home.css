@@ -12,9 +12,10 @@
 }
 
 .header h1{
-    font-size: 40px;
+    font-size: 22px;
     max-width: 900px;
     line-height: 1;
+    font-family: 'Vexa-font';
 }
 
 .cards{
