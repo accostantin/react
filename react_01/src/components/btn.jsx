@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 function Button() {
   return (
     <div className="btn">
-    <Link to="/roupas" className="btn-ladob-link" target="_blank" rel="noopener noreferrer">
-  <button className="btn-ladob">Lado B</button>
-   </Link>
+      <Link to="/lado-b" className="btn-ladob" target="_blank" rel="noopener noreferrer">
+        Lado B
+      </Link>
     </div>
   )
 }

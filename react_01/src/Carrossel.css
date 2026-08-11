@@ -32,8 +32,10 @@ main {
   }
 
   .imagem{
-    width: 900px;
-    height: 5;
+    width: min(900px, 100%);
+    height: auto;
+    display: block;
+    border-radius: 12px;
   }
 
   .botaodireita{

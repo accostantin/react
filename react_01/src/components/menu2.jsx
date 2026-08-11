@@ -1,16 +1,14 @@
 import { NavLink } from 'react-router-dom'
 
-function Menu() {
+function Menu2() {
   const links = [
-    { to: '/home', label: 'Home' },
-    { to: '/conteudos', label: 'Conteúdos' },
-    { to: '/dashboard', label: 'Dashboard' },
-    { to: '/contato', label: 'Contato' },
-    { to: '/sobre', label: 'Sobre nós' },
+    { to: '/lado-b', label: 'Home' },
+    { to: '/lado-b/acessorios', label: 'Acessórios' },
+    { to: '/lado-b/nova-colecao', label: 'Nova Coleção' },
   ]
 
   return (
-    <nav className="menu" aria-label="Menu principal">
+    <nav className="menu2" aria-label="Menu principal">
       {links.map((link) => (
         <NavLink
           key={link.to}
@@ -24,4 +22,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default Menu2

@@ -5,6 +5,14 @@
   background-color: #490839;
   font-family: 'Vexa-font';
 }
+.header2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  font-family: 'Vexa-font';
+}
+
 
 nav{
   display: flex;
@@ -29,21 +37,59 @@ nav a{
   font-display: swap;
 }
 
+.search-bar-b {
+  width: min(520px, 100%);
+  margin: 39px auto 15px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 999px;
+  background: rgb(175 175 175 / 92%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.search-bar-b input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Vexa-font', sans-serif;
+  font-size: 16px;
+  color: #111;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #555;
+}
 
 .btn-ladob{
   font-family: 'Vexa-font';
   font-size: 15px;
   text-align: center;
-  background-color: #CB1D85;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+ background-color: #6e656b;
   width: 120px;
   height: 50px;
   border-radius: 10px;
   border: none;
-  box-shadow:2px 4px 0px 0 rgba(0,0,0,0.6)
+  box-shadow: 2px 4px 0px 0 rgba(0,0,0,0.6);
+  cursor: pointer;
 }
 
 .btn-ladob:hover {
   background-color: #89116b;
+}
+
+nav a.ativo {
+  color: #000000;
+  font-weight: 700;
 }
 
 .menu-btn{
@@ -53,3 +99,7 @@ nav a{
   float: left;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
