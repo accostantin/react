@@ -1,5 +1,6 @@
 main {
-    padding: 20px;
+  padding: 21;
+    background: white;
   }
   
   .carousel-container {
@@ -33,7 +34,7 @@ main {
 
   .imagem{
     width: min(900px, 100%);
-    height: auto;
+    height: 540px;
     display: block;
     border-radius: 12px;
   }

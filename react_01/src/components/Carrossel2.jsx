@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import '../Carrossel.css'
-import modaImg from '../assets/moda.jpg'
 import fiveImg from '../assets/5.jpg'
 import SixImg from '../assets/6.jpg'
+import SevenImg from '../assets/7.jpg'
 
 function Carrossel2() {
-  const imagens = [modaImg, fiveImg, SixImg]
+  const imagens = [fiveImg, SixImg, SevenImg]
 
   const [indice, setIndice] = useState(0)
 

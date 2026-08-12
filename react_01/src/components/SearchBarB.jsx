@@ -1,18 +1,15 @@
-import { useState } from 'react'
 import '../App.css'
 
-function SearchBarB() {
-  const [query, setQuery] = useState('')
-
+function SearchBarB({ value = '', onChange = () => {} }) {
   return (
     <div className="search-bar-b">
       <span className="search-icon">🔍</span>
       <input
         type="search"
-        placeholder="Buscar Produtos"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        aria-label="Buscar Produtos"
+        placeholder="Buscar por estilo, categoria.."
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        aria-label="Buscar roupas"
       />
     </div>
   )
