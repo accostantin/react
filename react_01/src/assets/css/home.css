@@ -6,16 +6,18 @@
     align-items: center;
 }
 
-.header{
+.home{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-left: 95px;
 }
 
-.header h1{
-    font-size: 22px;
+.Home-title {
     max-width: 900px;
     line-height: 1;
     font-family: 'Vexa-font';
+    font-size: 30px;
+    color: #FFA7EC;
 }
 
 .cards{

@@ -10,7 +10,7 @@ function ProfileSection() {
 
       {/* TÍTULO */}
       <div className="profile-title">
-        <h1>Contact Us</h1>
+        <h1 className='contact-title'>Contato</h1>
         <span></span>
       </div>
 
@@ -20,7 +20,7 @@ function ProfileSection() {
         {/* CARD ESQUERDO */}
         <section className="contact-info">
 
-          <h2>Get In Touch</h2>
+          <h2 className='profile-info'>Informações</h2>
           <div className="title-line"></div>
 
           {/* PERFIL 1 */}
@@ -29,7 +29,7 @@ function ProfileSection() {
 
             <div>
               <h3>Ana Clara</h3>
-              <p>123 Main Street, Brasil</p>
+              <p>Porto Alegre, Rio Grande do Sul - Brasil</p>
             </div>
           </div>
 
@@ -43,18 +43,13 @@ function ProfileSection() {
             <p>+55 51 99568-9785</p>
           </div>
 
-          <div className="contact-item">
-            <span>●</span>
-            <p>@anaclara</p>
-          </div>
-
           {/* PERFIL 2 */}
           <div className="person second-person">
             <img src={perfil2} alt="Isabelle" />
 
             <div>
               <h3>Isabelle</h3>
-              <p>123 Main Street, Brasil</p>
+              <p>Porto Alegre, Rio Grande do Sul - Brasil</p>
             </div>
           </div>
 
@@ -89,17 +84,12 @@ function ProfileSection() {
           ></textarea>
 
           <button type="button">
-            Send Message
+            Enviar
           </button>
 
         </section>
 
       </div>
-
-      {/* RODAPÉ */}
-      <footer className="profile-footer">
-        ◎ solutionsbluehorizon
-      </footer>
 
     </main>
   );

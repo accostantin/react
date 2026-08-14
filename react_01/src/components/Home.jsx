@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="container">
 
-      <div className="header">
+      <div className="home">
         <p className="subtitle"></p>
 
         <h1 className='Home-title'>

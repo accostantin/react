@@ -29,21 +29,31 @@ nav a{
   font-display: swap;
 }
 
-
 .btn-ladob{
   font-family: 'Vexa-font';
   font-size: 15px;
   text-align: center;
-  background-color: #CB1D85;
   width: 120px;
   height: 50px;
   border-radius: 10px;
   border: none;
-  box-shadow:2px 4px 0px 0 rgba(0,0,0,0.6)
+
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    hsl(313, 94%, 59%),
+    #CB1D85 
+  );
+  cursor: pointer;
+
+  transition: 0.3s;
 }
 
 .btn-ladob:hover {
-  background-color: #89116b;
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(127, 6, 111, 0.76);
 }
 
 .menu-btn {
@@ -57,7 +67,3 @@ nav a{
   align-items: center;
   justify-content: center;
 }
-
-
-
-
