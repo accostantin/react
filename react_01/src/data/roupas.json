@@ -6,7 +6,7 @@
     "categoria": "Calça",
     "ano": 2026,
     "nota": 4.8,
-    "capa": "./imagens/calca-jeans-reta.jpg",
+    "capa": "./assets/calça-jeans-reta.jpg",
     "status": "Disponível",
     "descricao": "Calça jeans de corte reto, versátil e fácil de combinar com diferentes estilos.",
     "tags": [
@@ -22,7 +22,7 @@
     "categoria": "Calça",
     "ano": 2026,
     "nota": 4.7,
-    "capa": "./imagens/calca-wide-leg.jpg",
+    "capa": "./assets/calça wide.png",
     "status": "Disponível",
     "descricao": "Calça de modelagem ampla que proporciona um visual moderno e confortável.",
     "tags": [
@@ -38,7 +38,7 @@
     "categoria": "Calça",
     "ano": 2026,
     "nota": 4.6,
-    "capa": "./imagens/calca-cargo.jpg",
+    "capa": "./assets/calça-cargo.jpg",
     "status": "Disponível",
     "descricao": "Calça cargo com bolsos laterais e estilo urbano, ideal para produções casuais.",
     "tags": [
@@ -54,7 +54,7 @@
     "categoria": "Calça",
     "ano": 2026,
     "nota": 4.9,
-    "capa": "./imagens/calca-alfaiataria.jpg",
+    "capa": "./assets/calça-alfaiataria.jpg",
     "status": "Disponível",
     "descricao": "Calça de alfaiataria com corte estruturado, indicada para produções elegantes e sofisticadas.",
     "tags": [
@@ -70,7 +70,7 @@
     "categoria": "Calça",
     "ano": 2026,
     "nota": 4.5,
-    "capa": "./imagens/calca-jogger.jpg",
+    "capa": "./assets/calça-jogger.jpg",
     "status": "Disponível",
     "descricao": "Calça jogger confortável com ajuste na cintura e na barra, ideal para looks descontraídos.",
     "tags": [
@@ -86,7 +86,7 @@
     "categoria": "Blusa",
     "ano": 2026,
     "nota": 4.8,
-    "capa": "./imagens/blusa-basica.jpg",
+    "capa": "./assets/blusa-basica.jpg",
     "status": "Disponível",
     "descricao": "Blusa básica e versátil para compor diferentes combinações no dia a dia.",
     "tags": [
@@ -102,7 +102,7 @@
     "categoria": "Blusa",
     "ano": 2026,
     "nota": 4.6,
-    "capa": "./imagens/blusa-cropped.jpg",
+    "capa": "./assets/blusa-cropped.jpg",
     "status": "Disponível",
     "descricao": "Blusa cropped de estilo moderno, ideal para combinações descontraídas.",
     "tags": [
@@ -118,7 +118,7 @@
     "categoria": "Blusa",
     "ano": 2026,
     "nota": 4.7,
-    "capa": "./imagens/blusa-manga-longa.jpg",
+    "capa": "./assets/blusa-manga-longa.jpg",
     "status": "Disponível",
     "descricao": "Blusa de manga longa com design confortável para dias mais frescos.",
     "tags": [
@@ -134,7 +134,7 @@
     "categoria": "Blusa",
     "ano": 2026,
     "nota": 4.9,
-    "capa": "./imagens/blusa-trico.jpg",
+    "capa": "./assets/blusa-trico.jpg",
     "status": "Disponível",
     "descricao": "Blusa de tricô confortável e aconchegante, perfeita para composições de inverno.",
     "tags": [
@@ -150,7 +150,7 @@
     "categoria": "Blusa",
     "ano": 2026,
     "nota": 4.8,
-    "capa": "./imagens/blusa-social.jpg",
+    "capa": "./assets/blusa-social.png",
     "status": "Disponível",
     "descricao": "Blusa social de corte elegante para ocasiões formais ou produções sofisticadas.",
     "tags": [
@@ -166,7 +166,7 @@
     "categoria": "Vestido",
     "ano": 2026,
     "nota": 4.8,
-    "capa": "./imagens/vestido-midi.jpg",
+    "capa": "./assets/vestido-midi.jpg",
     "status": "Disponível",
     "descricao": "Vestido midi de comprimento intermediário, combinando elegância e praticidade.",
     "tags": [
@@ -182,7 +182,7 @@
     "categoria": "Vestido",
     "ano": 2026,
     "nota": 4.9,
-    "capa": "./imagens/vestido-longo.jpg",
+    "capa": "./assets/vestido-longo.jpg",
     "status": "Disponível",
     "descricao": "Vestido longo com visual sofisticado para ocasiões especiais e eventos.",
     "tags": [
@@ -198,7 +198,7 @@
     "categoria": "Vestido",
     "ano": 2026,
     "nota": 4.6,
-    "capa": "./imagens/vestido-floral.jpg",
+    "capa": "./assets/vestido-floral.png",
     "status": "Disponível",
     "descricao": "Vestido com estampa floral e estilo leve, ideal para produções casuais.",
     "tags": [
@@ -214,7 +214,7 @@
     "categoria": "Vestido",
     "ano": 2026,
     "nota": 4.9,
-    "capa": "./imagens/vestido-preto.jpg",
+    "capa": "./assets/vestido-preto.jpg",
     "status": "Disponível",
     "descricao": "Vestido preto clássico e versátil para diferentes ocasiões.",
     "tags": [
@@ -230,7 +230,7 @@
     "categoria": "Vestido",
     "ano": 2026,
     "nota": 4.7,
-    "capa": "./imagens/vestido-chemise.jpg",
+    "capa": "./assets/vestido chemise.jpg",
     "status": "Disponível",
     "descricao": "Vestido chemise inspirado em camisas tradicionais, proporcionando um visual moderno e confortável.",
     "tags": [
@@ -246,7 +246,7 @@
     "categoria": "Short",
     "ano": 2026,
     "nota": 4.8,
-    "capa": "./imagens/short-jeans.jpg",
+    "capa": "./assets/short-jeans.jpg",
     "status": "Disponível",
     "descricao": "Short jeans clássico e versátil para composições casuais e descontraídas.",
     "tags": [
@@ -262,7 +262,7 @@
     "categoria": "Short",
     "ano": 2026,
     "nota": 4.7,
-    "capa": "./imagens/short-alfaiataria.jpg",
+    "capa": "./assets/short-alfaiataria.jpg",
     "status": "Disponível",
     "descricao": "Short de alfaiataria com corte elegante, ideal para produções modernas.",
     "tags": [
@@ -278,7 +278,7 @@
     "categoria": "Short",
     "ano": 2026,
     "nota": 4.5,
-    "capa": "./imagens/short-esportivo.jpg",
+    "capa": "./assets/short-esportivo.jpg",
     "status": "Disponível",
     "descricao": "Short leve e confortável para atividades físicas e momentos de lazer.",
     "tags": [
@@ -294,7 +294,7 @@
     "categoria": "Short",
     "ano": 2026,
     "nota": 4.8,
-    "capa": "./imagens/short-linho.jpg",
+    "capa": "./assets/short-linho.jpg",
     "status": "Disponível",
     "descricao": "Short de linho com tecido leve e visual sofisticado para dias quentes.",
     "tags": [
@@ -310,7 +310,7 @@
     "categoria": "Short",
     "ano": 2026,
     "nota": 4.6,
-    "capa": "./imagens/short-cargo.jpg",
+    "capa": "./assets/short-cargo.jpg",
     "status": "Disponível",
     "descricao": "Short cargo com bolsos laterais e estilo urbano para combinações descontraídas.",
     "tags": [
