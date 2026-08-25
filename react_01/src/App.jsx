@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar.jsx';
 import Banner from './components/Banner.jsx';
 import Home from './components/Home.jsx';
 import ProfileSection from './components/ProfileSection.jsx';
+import Footer from './components/Footer.jsx';
 
 import './App.css';
 

@@ -1,16 +1,52 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 import '../assets/css/ProfileSection.css';
 
 import perfil from '../assets/img/ana.png';
 import perfil2 from '../assets/img/isa.png';
 
 function ProfileSection() {
+
+  // Referência para o formulário
+  const form = useRef();
+
+  // Função responsável por enviar o formulário
+  const enviarEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_najuo9k',
+        'template_5ky29af',
+        form.current,
+        {
+          publicKey: 'RFKQHv2_O2tIceoSu',
+        }
+      )
+      .then(
+        () => {
+          alert('Mensagem enviada com sucesso!');
+
+          // Limpa os campos depois do envio
+          form.current.reset();
+        },
+        (error) => {
+          console.log('ERRO:', error);
+          alert('Erro ao enviar a mensagem.');
+        }
+      );
+  };
+
   return (
     <main className="profile-section">
 
-
       {/* TÍTULO */}
       <div className="profile-title">
-        <h1 className='contact-title'>Contato</h1>
+        <h1 className="contact-title">
+          Contato
+        </h1>
+
         <span></span>
       </div>
 
@@ -20,17 +56,28 @@ function ProfileSection() {
         {/* CARD ESQUERDO */}
         <section className="contact-info">
 
-          <h2 className='profile-info'>Informações</h2>
+          <h2 className="profile-info">
+            Informações
+          </h2>
+
           <div className="title-line"></div>
 
           {/* PERFIL 1 */}
           <div className="person">
-            <img src={perfil} alt="Ana Clara" />
+
+            <img
+              src={perfil}
+              alt="Ana Clara"
+            />
 
             <div>
               <h3>Ana Clara</h3>
-              <p>Porto Alegre, Rio Grande do Sul - Brasil</p>
+
+              <p>
+                Porto Alegre, Rio Grande do Sul - Brasil
+              </p>
             </div>
+
           </div>
 
           <div className="contact-item">
@@ -43,14 +90,23 @@ function ProfileSection() {
             <p>+55 51 99568-9785</p>
           </div>
 
+
           {/* PERFIL 2 */}
           <div className="person second-person">
-            <img src={perfil2} alt="Isabelle" />
+
+            <img
+              src={perfil2}
+              alt="Isabelle"
+            />
 
             <div>
               <h3>Isabelle</h3>
-              <p>Porto Alegre, Rio Grande do Sul - Brasil</p>
+
+              <p>
+                Porto Alegre, Rio Grande do Sul - Brasil
+              </p>
             </div>
+
           </div>
 
           <div className="contact-item">
@@ -67,27 +123,41 @@ function ProfileSection() {
 
 
         {/* FORMULÁRIO */}
-        <section className="contact-form">
+        <form
+          ref={form}
+          className="contact-form"
+          onSubmit={enviarEmail}
+        >
 
+          {/* NOME */}
           <input
             type="text"
-            placeholder="Your Name"
+            name="user_name"
+            placeholder="Seu nome"
+            required
           />
 
-          <input
+          {/* EMAIL */}
+          <input  
             type="email"
-            placeholder="Your Email"
+            name="user_email"
+            placeholder="Seu email"
+            required
           />
 
+          {/* MENSAGEM */}
           <textarea
-            placeholder="Your Message"
+            name="message"
+            placeholder="Sua mensagem"
+            required
           ></textarea>
 
-          <button type="button">
+          {/* BOTÃO */}
+          <button type="submit">
             Enviar
           </button>
 
-        </section>
+        </form>
 
       </div>
 
