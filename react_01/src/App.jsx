@@ -19,6 +19,7 @@ function App() {
       <Banner />
       <Home />
       <ProfileSection />
+      <Footer />
     </div>
   );
 }
