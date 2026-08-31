@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Header from './components/Header.jsx';
 import Button from './components/Button.jsx';
 import Sidebar from './components/Sidebar.jsx';
@@ -12,14 +13,27 @@ import './App.css';
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <Header  onMenuClick={() => setIsOpen(true)} /> 
-      <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)}/>
+
+      <Header
+        onMenuClick={() => setIsOpen(true)}
+      />
+
+      <Sidebar
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      />
+
       <Banner />
+
       <Home />
+
       <ProfileSection />
+
       <Footer />
+
     </div>
   );
 }
