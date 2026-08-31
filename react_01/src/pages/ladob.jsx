@@ -8,7 +8,7 @@ import roupasData from '../data/roupas.json'
 
 const OPCOES_VISUAIS = ['Todos', 'Favoritos']
 
-function LadoB() {
+function LadoB({ favoritos = [], aoAlternarFavorito = () => {} }) {
   const [query, setQuery] = useState('')
   const [categoria, setCategoria] = useState('Todas')
   const [filtroVisual, setFiltroVisual] = useState('Todos')
@@ -31,11 +31,11 @@ function LadoB() {
 
       const matchVisual =
         filtroVisual === 'Todos' ||
-        (filtroVisual === 'Favoritos' && roupa.favorito)
+        (filtroVisual === 'Favoritos' && favoritos.includes(roupa.id))
 
       return matchCategoria && matchBusca && matchVisual
     })
-  }, [categoria, filtroVisual, query])
+  }, [categoria, filtroVisual, query, favoritos])
 
   return (
     <div className="lado-b-page">
@@ -74,8 +74,8 @@ function LadoB() {
       <main className="lado-b-main">
         <ListaRoupa
           roupas={roupasFiltradas}
-          favoritos={[]}
-          aoAlternarFavorito={() => {}}
+          favoritos={favoritos}
+          aoAlternarFavorito={aoAlternarFavorito}
         />
       </main>
     </div>
