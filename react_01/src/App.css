@@ -49,29 +49,36 @@ nav a.ativo {
   font-weight: 700;
 }
 
-.btn-ladob {
-  font-family: 'Vexa-font', sans-serif;
-  font-size: 15px;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #6e656b;
-  width: 120px;
-  height: 50px;
-  border-radius: 10px;
+.btn-ladob{
+  width: 130px;
+  
+  padding: 12px 18px;
+
   border: none;
-  box-shadow: 2px 4px 0px 0 rgba(0, 0, 0, 0.6);
+
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    hsl(313, 94%, 59%),
+    #CB1D85 
+  );
+
+  color: white;
+
+  font-size: 14px;
+  text-decoration: none;
+
   cursor: pointer;
+
   transition: 0.3s;
+  font-family: 'Vexa-font';
 }
 
-.btn-ladob:hover {
-  background-color: #89116b;
+.contact-form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(127, 6, 111, 0.76);
+
+  box-shadow:
+    0 5px 15px rgba(255, 8, 222, 0.76);
 }
 
 .menu-btn {
