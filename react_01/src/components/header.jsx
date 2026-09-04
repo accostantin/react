@@ -19,7 +19,7 @@ function Header({ onMenuClick }) {
         <a href="/sobre">Sobre nós</a>
       </nav>
 
-      <Button />
+      <ButtonLadoA />
 
     </header>
   );
