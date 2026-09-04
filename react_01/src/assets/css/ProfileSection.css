@@ -1,0 +1,275 @@
+.profile-section {
+    min-height: 100vh;
+    width: 100%;
+  
+    padding: 35px 7% 25px;
+  
+    box-sizing: border-box;
+  
+    color: white;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+  
+  /* =========================
+     TÍTULO
+  ========================= */
+  
+  .profile-title {
+    text-align: center;
+  
+    margin: 25px 0 40px;
+  }
+  
+  .profile-title h1 {
+    margin: 0;
+
+    font-family: 'Vexa-font';
+  
+    font-size: 30px;
+  
+    margin-top: 100px;
+    font-weight: 700;
+    color: #FFA7EC;
+  }
+  
+  
+  
+  /* =========================
+     CONTAINER
+  ========================= */
+  
+  .contact-container {
+    max-width: 1000px;
+  
+    margin: 0 auto;
+  
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr;
+  
+    gap: 30px;
+  
+    align-items: stretch;
+  }
+  
+  
+  /* =========================
+     CARD ESQUERDO
+  ========================= */
+  
+  .contact-info {
+    padding: 35px 30px;
+  
+    border-radius: 15px;
+  
+    background: #323232;
+  
+    backdrop-filter: blur(10px);
+  
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-info h2 {
+    margin: 0;
+
+    font-family: 'Vexa-font';
+  
+    font-size: 20px;
+
+    color: #ffffff;
+  }
+  
+  .title-line {
+    width: 50px;
+    height: 5px;
+  
+    margin: 12px 0 25px;
+  
+    background: white;
+  }
+  
+  
+  /* =========================
+     PERFIL
+  ========================= */
+  
+  .person {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 15px;
+  
+    margin-bottom: 20px;
+  }
+  
+  .person img {
+    width: 75px;
+    height: 75px;
+  
+    border-radius: 50%;
+  
+    object-fit: cover;
+  
+    border: 2px solid #FFA7EC;
+  }
+  
+  .person h3 {
+    margin: 0 0 5px;
+  
+    font-size: 18px;
+  }
+  
+  .person p {
+    margin: 0;
+  
+    font-size: 13px;
+  
+    opacity: 0.8;
+  }
+  
+  .second-person {
+    margin-top: 30px;
+  }
+  
+  
+  /* =========================
+     CONTATOS
+  ========================= */
+  
+  .contact-item {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 15px;
+  
+    margin: 15px 0;
+  }
+  
+  .contact-item span {
+    width: 30px;
+  
+    font-size: 22px;
+  
+    text-align: center;
+  }
+  
+  .contact-item p {
+    margin: 0;
+  
+    font-size: 14px;
+  }
+  
+  
+  /* =========================
+     FORMULÁRIO
+  ========================= */
+  
+  .contact-form {
+    display: flex;
+  
+    flex-direction: column;
+  
+    gap: 18px;
+  
+    padding: 30px 0;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  
+    box-sizing: border-box;
+  
+    border: none;
+  
+    outline: none;
+  
+    border-radius: 6px;
+  
+    padding: 17px;
+  
+    background: #323232;  
+  
+    color: white;
+  
+    font-family: inherit;
+  
+    font-size: 14px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #fffeff;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    box-shadow: 0 0 0 2px #CB1D85;
+  }
+  
+  .contact-form textarea {
+    height: 180px;
+  
+    resize: none;
+  }
+  
+  
+  /* =========================
+     BOTÃO
+  ========================= */
+  
+  .contact-form button {
+    width: 130px;
+  
+    padding: 12px 18px;
+  
+    border: none;
+  
+    border-radius: 20px;
+    background: linear-gradient(
+      90deg,
+      hsl(313, 94%, 59%),
+      #CB1D85 
+    );
+  
+    color: white;
+  
+    font-size: 14px;
+  
+    cursor: pointer;
+  
+    transition: 0.3s;
+    font-family: 'Vexa-font';
+  }
+  
+  .contact-form button:hover {
+    transform: translateY(-2px);
+  
+    box-shadow:
+      0 5px 15px rgba(255, 8, 222, 0.76);
+  }
+  
+  
+  /* =========================
+     RESPONSIVO
+  ========================= */
+  
+  @media (max-width: 800px) {
+
+  
+    .contact-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-form {
+      padding: 0;
+    }
+  
+    .profile-title h1 {
+      font-size: 28px;
+    }
+  }
