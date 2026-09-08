@@ -11,7 +11,7 @@ function ProfileSection() {
   // Referência para o formulário
   const form = useRef();
 
-  // Função responsável por enviar o formulário
+  // Função responsável por enviar o formulár
   const enviarEmail = (e) => {
     e.preventDefault();
 
