@@ -1,4 +1,4 @@
-import Button from './Button.jsx';
+import ButtonLadoA from './ButtonLadoA.jsx';
 import Menu from './Menu.jsx';
 
 function Header({ onMenuClick }) {

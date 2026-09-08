@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Header from '../components/header.jsx';
-import Button from '../components/Button.jsx';
+import Button from '../components/ButtonLadoA.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 import Banner from '../components/Banner.jsx';
 import Home from '../components/Home.jsx';
