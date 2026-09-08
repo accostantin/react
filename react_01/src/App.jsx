@@ -7,6 +7,7 @@ import LadoBAcessorios from './pages/lado-b-acessorios.jsx'
 import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx'
 import LadoBContato from './pages/lado-b-contato.jsx'
 import LadoBSobre from './pages/lado-b-sobre.jsx'
+import Conteudos from './pages/Conteudos.jsx'
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 
@@ -57,6 +58,11 @@ function App() {
           <Route
             path="/lado-a"
             element={<LadoA />}
+          />
+
+          <Route
+            path="/conteudos"
+            element={<Conteudos />}
           />
 
           <Route

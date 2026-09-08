@@ -81,6 +81,120 @@ nav a.ativo {
     0 5px 15px rgba(255, 8, 222, 0.76);
 }
 
+.conteudos-page {
+  min-height: calc(100vh - 76px);
+  padding: 56px clamp(24px, 7vw, 112px) 80px;
+  background: #fff5fb;
+  color: #241421;
+  font-family: 'Vexa-font', sans-serif;
+}
+
+.conteudos-header {
+  max-width: 1220px;
+  margin: 0 auto 42px;
+}
+
+
+
+.conteudos-header h1 {
+  margin: 14px 0 12px;
+  color: #490839;
+  font-size: clamp(32px, 5vw, 58px);
+}
+
+.conteudos-underline {
+  width: 88px;
+  height: 5px;
+  background: #cb1d85;
+}
+
+.conteudos-grid {
+  width: min(1220px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.noticias-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid rgba(73, 8, 57, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(73, 8, 57, 0.08);
+}
+
+.noticias-card-header h2 {
+  margin: 0;
+  color: #490839;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.noticias-card-conteudo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.noticias-card-conteudo p {
+  color: #574653;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.noticias-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.noticias-card-tags span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ffe1f2;
+  color: #8b1761;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.noticias-card-link {
+  align-self: flex-start;
+  margin-top: auto;
+  color: #cb1d85;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.noticias-card-link:hover {
+  color: #490839;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .conteudos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .conteudos-page {
+    padding: 40px 18px 56px;
+  }
+
+  .conteudos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .menu-btn {
   background: transparent;
   border: none;
