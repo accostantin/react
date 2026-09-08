@@ -6,6 +6,10 @@
   font-display: swap;
 }
 
+.conteudo-principal {
+  background-color: #1a1a1a;
+}
+
 .header {
   display: flex;
   justify-content: space-evenly;
