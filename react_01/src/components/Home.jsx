@@ -10,21 +10,34 @@ const cards = [
       image: card1,
       title: 'Informar',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod.',
+      <>
+      Compartilhar conhecimentos por meio de artigos e conteúdos relevantes, 
+      <br />
+      ampliando o acesso do usuário a informações de qualidade.
+    </>
+
     },
     {
       id: 2,
       image: card2,
       title:'Evidenciar',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod.',
+      <>
+        Apresentar informações verificadas por meio de fontes confiáveis,
+        <br />
+        estimulando o pensamento crítico e o diálogo sobre temas importantes.
+        </>
     },
     {
       id: 3,
       image: card3,
     title: 'Conscientizar',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod.',
+      <>
+      Promover a conscientização por meio da informação, constribuindo
+      <br />
+      para combater a violência de gênero e os impactos da desinformação.
+      </>
     },
   ];
 
