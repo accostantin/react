@@ -1,82 +1,42 @@
-import '../assets/css/footer.css';
-import React, { useState } from 'react';
+import '../assets/css/footer.css'
+import { useLanguage } from '../Context/LanguageContext.jsx'
+import { translations } from '../translation.js'
 
 function Footer() {
 
-  const [idioma, setIdioma] = useState('English');
-
-  function mudarIdioma() {
-    setIdioma(idioma === 'English' ? 'Português' : 'English');
-  }
+  const { idioma, mudarIdioma } = useLanguage()
+  const t = translations[idioma]
 
   return (
     <footer className="footer">
 
-      {/* Logo */}
       <div className="footer-logo">
         VEXA<span>®</span>
       </div>
 
-      {/* Redes sociais + idioma */}
       <div className="footer-social">
 
-        {/* Facebook */}
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-        >
-          f
-        </a>
+        {/* seus links */}
 
-        {/* Instagram */}
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-        >
-          ◎
-        </a>
-
-        {/* Pinterest */}
-        <a
-          href="https://www.pinterest.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-        >
-          ♥
-        </a>
-
-        {/* YouTube */}
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-        >
-          ▶
-        </a>
-
-        {/* Idioma */}
         <button
           className="language-button"
           onClick={mudarIdioma}
         >
-          {idioma}
+          {t.footer.idioma}
         </button>
 
       </div>
 
-      {/* Copyright */}
       <div className="footer-bottom">
-        Copyright © VEXA, Inc.
+        {t.footer.copyright}
       </div>
 
+      <p>
+        Idioma atual: {idioma}
+      </p>
+
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
