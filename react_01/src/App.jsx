@@ -62,7 +62,12 @@ function App() {
 
           <Route
             path="/conteudos"
-            element={<Conteudos />}
+            element={
+              <Conteudos
+                favoritos={favoritos}
+                aoAlternarFavorito={toggleFavorito}
+              />
+            }
           />
 
           <Route

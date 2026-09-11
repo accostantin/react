@@ -13,7 +13,7 @@ function Header({ onMenuClick }) {
       </div>
 
       <nav>
-        <a href="/conteudos">Conteúdos</a>
+        <a href="/conteudos">Notícias</a>
         <a href="/dashboard">Dashboard</a>
         <a href="/contato">Contato</a>
         <a href="/sobre">Sobre nós</a>
