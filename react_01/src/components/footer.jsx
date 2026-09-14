@@ -1,12 +1,6 @@
 import '../assets/css/footer.css'
-import { useLanguage } from '../Context/LanguageContext.jsx'
-import { translations } from '../translation.js'
 
 function Footer() {
-
-  const { idioma, mudarIdioma } = useLanguage()
-  const t = translations[idioma]
-
   return (
     <footer className="footer">
 
@@ -15,25 +9,36 @@ function Footer() {
       </div>
 
       <div className="footer-social">
+        <a href="#" className="social-icon" aria-label="Facebook">
+          f
+        </a>
 
-        {/* seus links */}
+        <a href="#" className="social-icon" aria-label="Instagram">
+          ◎
+        </a>
 
-        <button
-          className="language-button"
-          onClick={mudarIdioma}
-        >
-          {t.footer.idioma}
-        </button>
+        <a href="#" className="social-icon" aria-label="Twitter">
+          ♥
+        </a>
+      </div>
 
+      <div className="footer-links">
+        <a href="#">Início</a>
+        <span>·</span>
+        <a href="#">Sobre</a>
+        <span>·</span>
+        <a href="#">Contato</a>
+      </div>
+
+      <div className="footer-terms">
+        <a href="#">Termos de Uso</a>
+        <span>·</span>
+        <a href="#">Política de Privacidade</a>
       </div>
 
       <div className="footer-bottom">
-        {t.footer.copyright}
+        © 2026 VEXA. Todos os direitos reservados.
       </div>
-
-      <p>
-        Idioma atual: {idioma}
-      </p>
 
     </footer>
   )

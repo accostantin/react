@@ -1,17 +1,11 @@
-import { useLanguage } from '../Context/LanguageContext.jsx'
-import { translations } from '../translation.js'
-
 function FiltroCategoria({ categorias, valor, aoAlterar }) {
 
-  const { idioma } = useLanguage()
-  const t = translations[idioma]
-
   const nomesCategorias = {
-    Todas: t.ladoB.todas,
-    Calça: t.ladoB.categorias.calca,
-    Blusa: t.ladoB.categorias.blusa,
-    Vestido: t.ladoB.categorias.vestido,
-    Short: t.ladoB.categorias.short
+    Todas: 'Todas',
+    Calça: 'Calça',
+    Blusa: 'Blusa',
+    Vestido: 'Vestido',
+    Short: 'Short'
   }
 
   return (
@@ -23,7 +17,7 @@ function FiltroCategoria({ categorias, valor, aoAlterar }) {
       >
 
         <option value="Todas">
-          {nomesCategorias.Todas}
+          Todas
         </option>
 
         {categorias.map((categoria) => (

@@ -82,7 +82,7 @@ function ProfileSection() {
 
           <div className="contact-item">
             <span>✉</span>
-            <p>anaclara@gmail.com</p>
+            <p>accostantinmorel@gmail.com</p>
           </div>
 
           <div className="contact-item">
@@ -111,12 +111,12 @@ function ProfileSection() {
 
           <div className="contact-item">
             <span>✉</span>
-            <p>isabelle@gmail.com</p>
+            <p>isabellebones2008@gmail.com</p>
           </div>
 
           <div className="contact-item">
             <span>☎</span>
-            <p>+55 51 92652-3625</p>
+            <p>+55 51 99454-5774 </p>
           </div>
 
         </section>

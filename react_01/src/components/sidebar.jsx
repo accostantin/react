@@ -46,7 +46,7 @@ function Sidebar({ isOpen, onClose }) {
           onClick={handleLogin}
         >
           <span className="icone">✎</span>
-          <span>Criar conta ou entrar</span>
+          <span>Meu Perfil</span>
         </div>
 
         {/* Ajuda */}

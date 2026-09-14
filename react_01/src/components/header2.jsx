@@ -1,12 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import Button from './btn.jsx'
-import { useLanguage } from '../Context/LanguageContext.jsx'
-import { translations } from '../translation.js'
 
 function Header2() {
-  const { idioma } = useLanguage()
-  const t = translations[idioma]
-
   return (
     <header className="header2">
 
@@ -15,45 +9,47 @@ function Header2() {
       </div>
 
       <nav>
-
         <NavLink
           to="/lado-b"
           className={({ isActive }) => (isActive ? 'ativo' : '')}
         >
-          {t.menu.inicio}
+          Início
         </NavLink>
 
         <NavLink
           to="/lado-b/acessorios"
           className={({ isActive }) => (isActive ? 'ativo' : '')}
         >
-          {t.menu.acessorios}
+          Acessórios
         </NavLink>
 
         <NavLink
           to="/lado-b/nova-colecao"
           className={({ isActive }) => (isActive ? 'ativo' : '')}
         >
-          {t.menu.novaColecao}
+          Nova Coleção
         </NavLink>
 
         <NavLink
           to="/lado-b/contato"
           className={({ isActive }) => (isActive ? 'ativo' : '')}
         >
-          {t.menu.contato}
+          Contato
         </NavLink>
 
         <NavLink
           to="/lado-b/sobre"
           className={({ isActive }) => (isActive ? 'ativo' : '')}
         >
-          {t.menu.sobre}
+          Sobre
         </NavLink>
-
       </nav>
 
-      <Button />
+      <div className="btn">
+        <NavLink to="/lado-a" className="btn-ladob">
+          Lado B
+        </NavLink>
+      </div>
 
     </header>
   )
