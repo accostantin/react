@@ -8,6 +8,7 @@ import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx'
 import LadoBContato from './pages/lado-b-contato.jsx'
 import LadoBSobre from './pages/lado-b-sobre.jsx'
 import Conteudos from './pages/Conteudos.jsx'
+import SobreConteudos from './pages/sobre_Conteudos.jsx'
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 
@@ -68,6 +69,11 @@ function App() {
                 aoAlternarFavorito={toggleFavorito}
               />
             }
+          />
+
+          <Route
+            path="/sobreConteudos"
+            element={<SobreConteudos />}
           />
 
           <Route

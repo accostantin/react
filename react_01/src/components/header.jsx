@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import ButtonLadoA from './ButtonLadoA.jsx';
 import Menu from './Menu.jsx';
 
@@ -13,10 +14,10 @@ function Header({ onMenuClick }) {
       </div>
 
       <nav>
-        <a href="/conteudos">Notícias</a>
-        <a href="/dashboard">Dashboard</a>
-        <a href="/contato">Contato</a>
-        <a href="/sobre">Sobre nós</a>
+        <NavLink to="/conteudos">Notícias</NavLink>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/sobreConteudos">Conteúdos</NavLink>
+        <NavLink to="/contato">Contato</NavLink>
       </nav>
 
       <ButtonLadoA />
