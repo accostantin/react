@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 
 import LadoA from './pages/lado-a.jsx'
-
 import LadoB from './pages/ladob.jsx'
 import LadoBAcessorios from './pages/lado-b-acessorios.jsx'
 import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx'
 import LadoBContato from './pages/lado-b-contato.jsx'
 import LadoBSobre from './pages/lado-b-sobre.jsx'
+import Dashboard from './pages/dashboard.jsx'
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 
@@ -15,50 +15,40 @@ import './App.css'
 function App() {
 
   const [favoritos, setFavoritos] = useState(() => {
-
     try {
-
       const salvos = localStorage.getItem('favoritos')
-
       return salvos ? JSON.parse(salvos) : []
-
     } catch {
-
       return []
-
     }
-
   })
 
   useEffect(() => {
-
     localStorage.setItem('favoritos', JSON.stringify(favoritos))
-
   }, [favoritos])
 
   const toggleFavorito = (id) => {
-
     setFavoritos((prev) =>
       prev.includes(id)
         ? prev.filter((fav) => fav !== id)
         : [...prev, id]
     )
-
   }
 
   return (
-
     <div className="App">
 
       <main className="conteudo-principal">
 
         <Routes>
 
+          {/* Lado A */}
           <Route
             path="/lado-a"
             element={<LadoA />}
           />
 
+          {/* Lado B */}
           <Route
             path="/lado-b"
             element={
@@ -69,6 +59,7 @@ function App() {
             }
           />
 
+          {/* Acessórios */}
           <Route
             path="/lado-b/acessorios"
             element={
@@ -79,6 +70,7 @@ function App() {
             }
           />
 
+          {/* Nova Coleção */}
           <Route
             path="/lado-b/nova-colecao"
             element={
@@ -89,6 +81,7 @@ function App() {
             }
           />
 
+          {/* Contato */}
           <Route
             path="/lado-b/contato"
             element={
@@ -99,6 +92,7 @@ function App() {
             }
           />
 
+          {/* Sobre */}
           <Route
             path="/lado-b/sobre"
             element={
@@ -109,6 +103,11 @@ function App() {
             }
           />
 
+<Route
+  path="/lado-b/dashboard"
+  element={<Dashboard />}
+/>
+          {/* Rota padrão */}
           <Route
             path="*"
             element={<Navigate to="/lado-b" replace />}
@@ -119,9 +118,7 @@ function App() {
       </main>
 
     </div>
-
   )
-
 }
 
 export default App

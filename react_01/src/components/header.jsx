@@ -1,9 +1,11 @@
-import ButtonLadoA from './ButtonLadoA.jsx';
-import Menu from './Menu.jsx';
+import ButtonLadoA from './ButtonLadoA.jsx'
+import Menu from './Menu.jsx'
+import { Link } from 'react-router-dom'
 
 function Header({ onMenuClick }) {
 
   return (
+
     <header className="header">
 
       <Menu onMenuClick={onMenuClick} />
@@ -13,16 +15,31 @@ function Header({ onMenuClick }) {
       </div>
 
       <nav>
-        <a href="/conteudos">Conteúdos</a>
-        <a href="/dashboard">Dashboard</a>
-        <a href="/contato">Contato</a>
-        <a href="/sobre">Sobre nós</a>
+
+        <Link to="/conteudos">
+          Conteúdos
+        </Link>
+
+        <Link to="/lado-b/dashboard">
+          Dashboard
+        </Link>
+
+        <Link to="/contato">
+          Contato
+        </Link>
+
+        <Link to="/sobre">
+          Sobre nós
+        </Link>
+
       </nav>
 
       <ButtonLadoA />
 
     </header>
-  );
+
+  )
 }
 
-export default Header;
+export default Header
+
