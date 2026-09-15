@@ -34,14 +34,14 @@
 }
 
 .hero-sobre h1 {
-     margin-top: 34px;
+     margin-top: 8px;
     color: #2f1d2f;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: clamp(3.5rem, 3vw, 8.2rem);
     line-height: 0.96;
     letter-spacing: -0.06em;
-    text-align: left;
     font-size: 56px;
+    text-align:justify
 }
 
 .hero-sobre .purple-text {
@@ -56,6 +56,7 @@
   font-size: 1.05rem;
   line-height: 1.6;
   text-align:left
+  
 }
 
 .titulo {
@@ -697,6 +698,7 @@ nav a.ativo {
     line-height: 1.6;
     text-align: left;
     font-size: 18px;
+    
 }
 
 .painel-projeto {
@@ -729,10 +731,76 @@ nav a.ativo {
   font-weight: 700;
 }
 
-.quadrado-seta .seta{
-  font-size: 76px;
-  color:#4a095a;
-  margin-top:100px;
+.conteudos-underline2{
+  width: 88px;
+    height: 5px;
+    background: #4a095a;
+    margin-top:50px;
 }
 
+
+.main-sobre-conteudo h2{
+  margin: 0;
+  font-size:24px;
+  line-height: 0.98;
+  color: #4a095a;
+  letter-spacing: -0.03em;
+  text-align:left;
+  margin-left:31px;
+  margin-top:-150px;
+}
+
+.main-texto1{
+    margin-top: 24px;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-left: 31px;
+    max-width: 1051px;
+    text-align:justify
+}
+
+.main-texto2{
+     margin-top: 24px;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-left: 31px;
+    max-width: 1051px;
+    text-align:justify
+}
+
+.main-texto3{
+  margin-top: 24px;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-left: 31px;
+    max-width: 1051px;
+    text-align:justify
+}
+.main-texto4{
+    margin-top: 24px;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-left: 31px;
+    max-width: 1051px;
+    text-align:justify
+}
+
+.tipos-violencia {
+   margin-top: 24px;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-left: 31px;
+    max-width: 1051px;
+    text-align:justify
+}
+
+.Black-text {
+  font-weight: 700;
+  color: #000000;
+}
 

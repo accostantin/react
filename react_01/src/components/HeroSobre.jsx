@@ -19,10 +19,7 @@ function HeroSobre() {
              <button className="botao2">Entender formas de violência</button>
           </div>
         </div>
-         
-        <div className="quadrado-seta">
-           <span className="seta">↓</span>
-        </div>
+        <div className="conteudos-underline2"></div>
      </div>
     </section>
   )
