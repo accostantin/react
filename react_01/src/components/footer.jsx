@@ -23,17 +23,9 @@ function Footer() {
       </div>
 
       <div className="footer-links">
-        <a href="#">Início</a>
+        <a href="#">Termos de uso</a>
         <span>·</span>
-        <a href="#">Sobre</a>
-        <span>·</span>
-        <a href="#">Contato</a>
-      </div>
-
-      <div className="footer-terms">
-        <a href="#">Termos de Uso</a>
-        <span>·</span>
-        <a href="#">Política de Privacidade</a>
+        <a href="#">Política de privacidade</a>
       </div>
 
       <div className="footer-bottom">
