@@ -26,11 +26,11 @@
   ========================================================= */
   
   .dashboard-title {
-    margin: 0 0 35px;
-  
+    display: flex;
+
     font-family: 'Vexa-font', Arial, sans-serif;
   
-    font-size: clamp(20px, 2.5vw, 30px);
+    font-size: clamp(18px, 2vw, 25px);
   
     line-height: 1.2;
   

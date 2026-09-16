@@ -15,7 +15,7 @@ function Dashboard() {
         ===================================================== */}
 
         <h1 className="dashboard-title">
-          ANÁLISE GRÁFICOS DO FEMINICÍDIO NO BRASIL
+          Análise de gráficos de feminicídio no Brasil
         </h1>
 
 
