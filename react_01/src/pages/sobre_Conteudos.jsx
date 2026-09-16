@@ -1,6 +1,7 @@
 import Header2 from "../components/header.jsx";
 import HeroSobre from "../components/HeroSobre.jsx";
 import MainSobre from "../components/MainSobre.jsx";
+import Footer from "../components/Footer.jsx";
 
 function SobreConteudos() {
   return (
@@ -8,13 +9,11 @@ function SobreConteudos() {
         <Header2 />
         <HeroSobre />
         <MainSobre />
+        <Footer />
+
     </section>
   )
 }
 
 export default SobreConteudos
 
-/** <header className="conteudos-header">
-        <h1>Notícias</h1>
-        <div className="conteudos-underline"></div>
-      </header>/ */
