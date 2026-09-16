@@ -17,7 +17,7 @@
     width: min(92%, 1250px);
     margin: 0 auto;
     padding: clamp(30px, 5vw, 65px) 0;
-    background; background: #323232;
+    background: #323232;
   }
   
   
@@ -626,9 +626,11 @@
   ========================================================= */
   
   .servicos-section {
+    background: #222121;
+
     margin-top: 30px;
   
-    background: #303030;
+    background: #;
   
     border: 1px solid rgba(255, 255, 255, 0.04);
   
@@ -721,6 +723,7 @@
   
   
   .tabela-servicos {
+
     width: 100%;
   
     min-width: 720px;
@@ -1096,6 +1099,7 @@
     /* Tabela */
   
     .servicos-section {
+      background: #222121;
       margin-top: 18px;
   
       padding: 18px 14px;

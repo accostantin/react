@@ -1,4 +1,4 @@
-import Header2 from '../components/Header2.jsx'
+import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import '../assets/css/dashboard.css'
 
@@ -6,7 +6,7 @@ function Dashboard() {
   return (
     <div className="dashboard-page">
 
-      <Header2 />
+      <Header />
 
       <main className="dashboard">
 
