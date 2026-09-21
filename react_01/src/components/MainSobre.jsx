@@ -29,12 +29,14 @@ function MainSobre() {
      </p>
 
      <p className="main-texto4"> Conheça a seguir os tipos de violência contra a mulher:</p>
-   
-    <p className="tipos-violencia"><span className="roxinho-text">- Violência Física:</span> Empurrões, chutes, tapas, socos, puxões de cabelo, atirar objetos em sua direção, sacudir, apertar, queimar, cortar, ferir, etc.</p>
-    <p className="tipos-violencia"><span className="roxinho-text">- Violência Sexual:</span> Obrigar a ter relações sexuais com o/a autor/a de violência doméstica ou com outras pessoas; forçar a ver imagens pornográficas; induzir ou obrigar o aborto, o matrimônio ou a prostituição; impedir de usar método contraceptivo, etc.</p>
-    <p className="tipos-violencia"><span className="roxinho-text">- Violência Psicológica:</span> Ameaçar, chantagear, xingar, humilhar, manipular, perseguir, controlar o que faz, tirar sua liberdade de escolha ou ação, vigiar e inspecionar celular e computador da mulher, seus e-mails e redes sociais, isolar de amigos e familiares, impedir que trabalhe, estude ou saia de casa, fazer com que acredite que está louca, etc.</p>
-    <p className="tipos-violencia"><span className="roxinho-text">- Violência Moral:</span> Xingar diante de amigos, acusar de algo que não fez, falar coisas que não são verdadeiras sobre ela para os outros, afirmar que a vítima é mentirosa, vagabunda, entre outras.</p>
-    <p className="tipos-violencia"><span className="roxinho-text">- Violência Patrimonial:</span>  Destruir materiais profissionais ou instrumentos de trabalho para impedir que a mulher trabalhe; controlar o dinheiro gasto, obrigando-a a fazer prestação de contas, mesmo quando ela trabalhe fora; reter, danificar ou destruir fotos ou documentos pessoais, roupas, etc.</p>
+
+    <div id="tipos-violencia">
+      <p className="tipos-violencia"><span className="roxinho-text">- Violência Física:</span> Empurrões, chutes, tapas, socos, puxões de cabelo, atirar objetos em sua direção, sacudir, apertar, queimar, cortar, ferir, etc.</p>
+      <p className="tipos-violencia"><span className="roxinho-text">- Violência Sexual:</span> Obrigar a ter relações sexuais com o/a autor/a de violência doméstica ou com outras pessoas; forçar a ver imagens pornográficas; induzir ou obrigar o aborto, o matrimônio ou a prostituição; impedir de usar método contraceptivo, etc.</p>
+      <p className="tipos-violencia"><span className="roxinho-text">- Violência Psicológica:</span> Ameaçar, chantagear, xingar, humilhar, manipular, perseguir, controlar o que faz, tirar sua liberdade de escolha ou ação, vigiar e inspecionar celular e computador da mulher, seus e-mails e redes sociais, isolar de amigos e familiares, impedir que trabalhe, estude ou saia de casa, fazer com que acredite que está louca, etc.</p>
+      <p className="tipos-violencia"><span className="roxinho-text">- Violência Moral:</span> Xingar diante de amigos, acusar de algo que não fez, falar coisas que não são verdadeiras sobre ela para os outros, afirmar que a vítima é mentirosa, vagabunda, entre outras.</p>
+      <p className="tipos-violencia"><span className="roxinho-text">- Violência Patrimonial:</span>  Destruir materiais profissionais ou instrumentos de trabalho para impedir que a mulher trabalhe; controlar o dinheiro gasto, obrigando-a a fazer prestação de contas, mesmo quando ela trabalhe fora; reter, danificar ou destruir fotos ou documentos pessoais, roupas, etc.</p>
+    </div>
 
     <div className="quadrado-roxo">
       <p className="sinais-alerta">Sinais de Alertas</p>

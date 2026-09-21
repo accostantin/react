@@ -1,4 +1,19 @@
+import { useNavigate } from 'react-router-dom';
+
 function HeroSobre() {
+  const navigate = useNavigate();
+
+  const scrollToTiposDeViolencia = () => {
+    document.getElementById("tipos-violencia")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  const handleCanaisDeAjuda = () => {
+    navigate('/canais-ajuda');
+  };
+
   return (
     <section className="hero-sobre">
       <div className="hero-sobre-conteudo">
@@ -15,8 +30,12 @@ function HeroSobre() {
 
         <div className="painel-projeto" aria-label="Conteudos">
           <div className="linha-tecnologias">
-             <button className="botao1">Ver canais de ajuda</button>
-             <button className="botao2">Entender formas de violência</button>
+             <button className="botao1" type="button" onClick={handleCanaisDeAjuda}>
+                Ver canais de ajuda
+             </button>
+             <button className="botao2" type="button" onClick={scrollToTiposDeViolencia}>
+                Entender formas de violência
+             </button>
           </div>
         </div>
         <div className="conteudos-underline2"></div>

@@ -9,6 +9,7 @@ import LadoBContato from './pages/lado-b-contato.jsx'
 import LadoBSobre from './pages/lado-b-sobre.jsx'
 import Conteudos from './pages/Conteudos.jsx'
 import SobreConteudos from './pages/sobre_Conteudos.jsx'
+import CanaisAjuda from './pages/Canais_Ajuda.jsx'
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 
@@ -74,6 +75,11 @@ function App() {
           <Route
             path="/sobreConteudos"
             element={<SobreConteudos />}
+          />
+
+          <Route
+            path="/canais-ajuda"
+            element={<CanaisAjuda />}
           />
 
           <Route

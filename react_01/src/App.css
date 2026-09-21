@@ -252,12 +252,13 @@ nav a.ativo {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  padding-bottom: 40px;
 }
 
 .noticias-card {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 14px;
   background: #fff;
   border: 1px solid rgba(73, 8, 57, 0.14);
   border-radius: 12px;
@@ -465,10 +466,10 @@ nav a.ativo {
   height: 60px;
   border: 1px solid rgba(72, 72, 72, 0.18);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.62);
+  background: #ffffff;
   font-size: 1.08rem;
   padding: 20px 9px;
-  color: #1a1a1a;
+  color: #490839;
   appearance: none;
   background-image:
     linear-gradient(45deg, transparent 50%, #1a1a1a 50%),
@@ -951,17 +952,190 @@ nav a.ativo {
   
 }
 .ciclo-1{
-    margin-top: 24px;
     color: #ffffff;
     line-height: 1.7;
     font-size: 18px;
     margin-left: 56px;
     max-width: 1006px;
     text-align:justify;
-    padding-bottom: 300px;
+    padding-bottom: 65px;
 }
 
 .roxo-text {
   font-weight: 700;
   color:#FFA7EC ;
+}
+
+/*Canais de Ajuda*/
+
+.Header_Ajuda {
+  background: #490839;
+  color: #fff;
+  font-family: 'Vexa-font', sans-serif;
+ 
+}
+
+.Header_Ajuda-Aviso,
+.Header_Ajuda-Container {
+  width: min(100% - 60px, 1120px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.Header_Ajuda-Aviso {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: #f4c7e8;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.Header_Ajuda-Aviso p {
+  margin: 0;
+  font-size:16px;
+}
+
+.Header_Ajuda-Aviso strong {
+  color: #e45bc0;
+}
+
+.Header_Ajuda-Sair {
+  padding: 9px 20px;
+  border: 1px solid #a94c94;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font: 700 16px Arial, sans-serif;
+  cursor: pointer;
+}
+
+.Header_Ajuda-Container {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.Header_Ajuda-Marca {
+  display: inline-flex;
+  align-items: center;
+  color: #e45bc0;
+  text-decoration: none;
+}
+
+.Header_Ajuda-Titulo {
+  color: #FFA7EC;
+  font: 700 30px Georgia, 'Times New Roman', serif;
+  margin-bottom: 10px
+}
+
+.botao-ajuda {
+    min-width: 46px;
+    min-height: 36px;
+    margin-bottom:10px;
+    padding: 10px 21px;
+    border: 0;
+    border-radius: 4px;
+    background: #e45bc0;
+    color: #26051e;
+    font: 700 18px Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+@media (max-width: 640px) {
+  .Header_Ajuda-Aviso,
+  .Header_Ajuda-Container {
+    width: min(100% - 36px, 1120px);
+  }
+
+  .Header_Ajuda-Aviso {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  .Header_Ajuda-Sair {
+    align-self: flex-end;
+    margin-top: -42px;
+  }
+
+  .Header_Ajuda-Container {
+    min-height: 88px;
+  }
+}
+
+.hero-ajuda-conteudo{
+  background-color:#323232;
+}
+
+.hero-ajuda-conteudo h1{
+   margin-top:0;
+     margin-left:20px;
+     padding-top: 50px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 0.96;
+    letter-spacing: -0.06em;
+    font-size: 56px;
+    text-align:justify
+}
+.hero-ajuda-conteudo .text-purple{
+  color: #FFA7EC;
+  font-style: italic;
+}
+
+.hero-ajuda-conteudo .texto-ajuda1{
+  max-width: 660px;
+  margin-top: 24px;
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-left: 20px;
+  text-align: justify;
+}
+ .painel-projeto2{
+   margin-top: 30px;
+  margin-left: 20px;
+ }
+
+.linha-tecnologias2{
+ display: flex;
+  gap: 12px;
+}
+
+.painel-projeto2 .botao-ajuda{
+   height: 44px;
+   width: 120px;
+  border: 1px solid #075d73;
+  border-radius: 5px;
+  background: #490839;
+  color: #ffffff;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.painel-projeto2 .botao-ajuda2 {
+   height: 44px;
+   width: 120px;
+  border: 1px solid #FFA7EC;
+  border-radius: 5px;
+  color:#490839;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.conteudos-underline3{
+   width: 88px;
+    height: 5px;
+    background: #490839;
+    margin-top:50px;
+    margin-left: 20px;
 }
