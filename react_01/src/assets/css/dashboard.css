@@ -26,6 +26,13 @@
   ========================================================= */
   
   .dashboard-title {
+    
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
     display: flex;
 
     font-family: 'Vexa-font', Arial, sans-serif;
@@ -36,9 +43,11 @@
   
     font-weight: 600;
   
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
   
     color: #ffffff;
+
+    margin-top: -5px;
   }
   
   
@@ -365,7 +374,7 @@
   
     border-radius: 0 3px 3px 0;
   
-    color: #111;
+    color: #ffffff;
   
     font-size: 9px;
   
@@ -475,40 +484,27 @@
   
   .donut-chart {
     position: relative;
-  
-    width: clamp(140px, 13vw, 180px);
-  
+    width: clamp(140px, 13vw, 250px);
     aspect-ratio: 1;
-  
     flex-shrink: 0;
-  
     border-radius: 50%;
   
-    background: conic-gradient(
-      #f43ac5 0deg 132deg,
-      #ffffff 132deg 133deg,
-      #ce1680 133deg 358deg,
-      #f43ac5 358deg 359deg,
-      #ffffff 359deg 360deg
-    );
+    background:
+      radial-gradient(
+        circle,
+        #303030 0%,
+        #303030 56%,
+        transparent 56.5%
+      ),
+      conic-gradient(
+        #f6a3dd 0deg 1.5deg,
+        #f43ac5 1.5deg 133.5deg,
+        #610044 133.5deg 136deg,
+        #ce1680 136deg 360deg
+      );
   }
   
-  
-  .donut-center {
-    position: absolute;
-  
-    width: 51%;
-  
-    aspect-ratio: 1;
-  
-    background: #303030;
-  
-    border-radius: 50%;
-  
-    top: 24.5%;
-  
-    left: 24.5%;
-  }
+
   
   
   .donut-label {
@@ -525,7 +521,7 @@
   
   
   .label-amarela {
-    top: -17px;
+    top: -5px;
   
     left: 50%;
   
@@ -543,7 +539,7 @@
   
   
   .label-indigena {
-    bottom: -17px;
+    bottom: -5px;
   
     left: 50%;
   
@@ -575,7 +571,7 @@
   
     font-size: 11px;
   
-    color: #ddd;
+    color: #ffffff;
   }
   
   
@@ -628,9 +624,7 @@
   .servicos-section {
     background: #222121;
 
-    margin-top: 30px;
-  
-    background: #;
+    margin-top: 120px;
   
     border: 1px solid rgba(255, 255, 255, 0.04);
   
@@ -662,7 +656,7 @@
   
   .servicos-tag {
     display: inline-block;
-  
+
     margin-bottom: 8px;
   
     font-family: Arial, sans-serif;
@@ -676,10 +670,17 @@
     color: #f43ac5;
   }
   
-  
+  .div-tags {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
   .servicos-header h2 {
     margin: 0;
-  
+
     font-family: 'Vexa-font', Arial, sans-serif;
   
     font-size: clamp(18px, 2vw, 25px);
@@ -969,6 +970,7 @@
   
   
     .dashboard-title {
+
       margin-bottom: 25px;
   
       font-size: 18px;

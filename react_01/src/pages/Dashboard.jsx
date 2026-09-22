@@ -15,7 +15,7 @@ function Dashboard() {
         ===================================================== */}
 
         <h1 className="dashboard-title">
-          Análise de gráficos de feminicídio no Brasil
+          Análise de gráficos feminicídio no Brasil
         </h1>
 
 
@@ -328,7 +328,7 @@ function Dashboard() {
 
           <div className="servicos-header">
 
-            <div>
+            <div className="div-tags">
 
               <span className="servicos-tag">
                 REDE DE ATENDIMENTO
@@ -339,11 +339,6 @@ function Dashboard() {
               </h2>
 
             </div>
-
-            <p>
-              Conheça os principais serviços especializados
-              de atendimento e proteção.
-            </p>
 
           </div>
 
