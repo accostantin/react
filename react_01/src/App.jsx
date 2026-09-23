@@ -6,7 +6,7 @@ import LadoBAcessorios from './pages/lado-b-acessorios.jsx'
 import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx'
 import LadoBContato from './pages/lado-b-contato.jsx'
 import LadoBSobre from './pages/lado-b-sobre.jsx'
-import Dashboard from './pages/dashboard.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 

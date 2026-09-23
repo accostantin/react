@@ -217,7 +217,7 @@
   
   
   .bar-4 {
-    height: 8%;
+    height: 4,8%;
     background: #57033e;
   }
   
@@ -314,24 +314,23 @@
     font-size: 23px;
   }
   
-  
   /* =========================================================
-     GRÁFICO DE IDADE
+     GRÁFICO DE FAIXA ETÁRIA
   ========================================================= */
-  
-  .faixa-etaria {
-    min-height: 330px;
-  }
-  
   
   .horizontal-chart {
     width: 100%;
-  
     margin-top: 8px;
   }
   
   
+  /* =========================================================
+     CADA LINHA DO GRÁFICO
+  ========================================================= */
+  
   .idade-linha {
+    position: relative;
+  
     display: grid;
   
     grid-template-columns:
@@ -345,27 +344,70 @@
     height: 28px;
   
     font-family: Arial, sans-serif;
-  
     font-size: clamp(8px, 0.8vw, 10px);
   }
   
   
+  /* =========================================================
+     LINHA BRANCA DE FUNDO
+  ========================================================= */
+  
+  .idade-linha::after {
+    content: "";
+  
+    position: absolute;
+  
+    /*
+      começa exatamente onde começam as barras
+    */
+    left: 95px;
+    right: 0;
+  
+    /*
+      fica no centro vertical da linha
+    */
+    top: 50%;
+  
+    height: 1px;
+  
+    transform: translateY(-50%);
+  
+    background: rgba(255, 255, 255, 0.30);
+  
+    z-index: 0;
+  
+    pointer-events: none;
+  }
+  
+  
+  /* =========================================================
+     TEXTO DA FAIXA ETÁRIA
+  ========================================================= */
+  
   .idade-linha > span {
+    position: relative;
+    z-index: 2;
+  
     text-align: right;
   
     color: #eeeeee;
   }
   
   
+  /* =========================================================
+     BARRA COLORIDA
+  ========================================================= */
+  
   .idade-bar {
+    position: relative;
+    z-index: 3;
+  
     height: 17px;
   
     max-width: 100%;
   
     display: flex;
-  
     align-items: center;
-  
     justify-content: flex-end;
   
     padding-right: 6px;
@@ -389,47 +431,44 @@
   }
   
   
+  /* =========================================================
+     TAMANHO DAS BARRAS
+  ========================================================= */
+  
   .bar-idade-1 {
     width: 4.3%;
     background: #f8a3df;
   }
-  
   
   .bar-idade-2 {
     width: 12.7%;
     background: #f8a3df;
   }
   
-  
   .bar-idade-3 {
     width: 51.7%;
     background: #d01782;
   }
-  
   
   .bar-idade-4 {
     width: 46.3%;
     background: #d01782;
   }
   
-  
   .bar-idade-5 {
     width: 94.3%;
     background: #610044;
   }
-  
   
   .bar-idade-6 {
     width: 72.3%;
     background: #610044;
   }
   
-  
   .bar-idade-7 {
     width: 31.3%;
     background: #f8a3df;
   }
-  
   
   .bar-idade-8 {
     width: 16.7%;
@@ -437,13 +476,15 @@
   }
   
   
+  /* =========================================================
+     EIXO HORIZONTAL
+  ========================================================= */
+  
   .eixo-horizontal {
     margin-left: 95px;
-  
     margin-top: 10px;
   
     display: flex;
-  
     justify-content: space-between;
   
     gap: 5px;
@@ -451,9 +492,72 @@
     color: #aaa;
   
     font-family: Arial, sans-serif;
-  
     font-size: 8px;
   }
+  
+  
+  /* =========================================================
+     CELULAR
+  ========================================================= */
+  
+  @media (max-width: 600px) {
+  
+    .idade-linha {
+      grid-template-columns:
+        62px
+        minmax(0, 1fr);
+  
+      gap: 7px;
+  
+      height: 27px;
+  
+      font-size: 8px;
+    }
+  
+  
+    .idade-linha::after {
+      left: 69px;
+    }
+  
+  
+    .idade-bar {
+      height: 15px;
+      font-size: 8px;
+    }
+  
+  
+    .eixo-horizontal {
+      margin-left: 69px;
+      font-size: 7px;
+    }
+  }
+  
+  
+  /* =========================================================
+     CELULARES MUITO PEQUENOS
+  ========================================================= */
+  
+  @media (max-width: 380px) {
+  
+    .idade-linha {
+      grid-template-columns:
+        55px
+        minmax(0, 1fr);
+  
+      font-size: 7px;
+    }
+  
+  
+    .idade-linha::after {
+      left: 62px;
+    }
+  
+  
+    .eixo-horizontal {
+      margin-left: 62px;
+      font-size: 6px;
+    }
+  }  
   
   
   /* =========================================================
@@ -481,81 +585,117 @@
     gap: clamp(15px, 3vw, 35px);
   }
   
-  
-  .donut-chart {
-    position: relative;
-    width: clamp(140px, 13vw, 250px);
-    aspect-ratio: 1;
-    flex-shrink: 0;
-    border-radius: 50%;
-  
-    background:
-      radial-gradient(
-        circle,
-        #303030 0%,
-        #303030 56%,
-        transparent 56.5%
-      ),
-      conic-gradient(
-        #f6a3dd 0deg 1.5deg,
-        #f43ac5 1.5deg 133.5deg,
-        #610044 133.5deg 136deg,
-        #ce1680 136deg 360deg
-      );
-  }
-  
+  /* ===================================================
+   GRÁFICO — RAÇA / COR
+   =================================================== */
 
-  
-  
-  .donut-label {
-    position: absolute;
-  
-    font-family: Arial, sans-serif;
-  
-    font-size: 9px;
-  
-    font-weight: 500;
-  
-    color: #ffffff;
-  }
-  
-  
-  .label-amarela {
-    top: -5px;
-  
-    left: 50%;
-  
-    transform: translateX(-50%);
-  }
-  
-  
-  .label-branca {
-    right: -5px;
-  
-    top: 47%;
-  
-    transform: translateY(-50%);
-  }
-  
-  
-  .label-indigena {
-    bottom: -5px;
-  
-    left: 50%;
-  
-    transform: translateX(-50%);
-  }
-  
-  
-  .label-negra {
-    left: 2px;
-  
-    top: 47%;
-  
-    transform: translateY(-50%);
-  }
-  
-  
+.donut-chart {
+  position: relative;
+  width: clamp(140px, 13vw, 180px);
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  border-radius: 50%;
+
+  /* 
+     0,3% Amarela
+     36,8% Branca
+     0,3% Indígena
+     62,6% Negra
+  */
+  background: conic-gradient(
+    #ff00a8 0% 0.9%,       /* Amarela — 0,3% */
+    #f6a3d8 0.3% 37.1%,   /* Branca — 36,8% */
+    #8b0057 37.1% 37.9%,  /* Indígena — 0,3% */
+    #d5007f 37.4% 100%    /* Negra — 62,6% */
+  );
+}
+
+/* ===================================================
+   CÍRCULO CENTRAL
+   =================================================== */
+
+.donut-center {
+  position: absolute;
+
+  width: 58%;
+  height: 58%;
+
+  top: 21%;
+  left: 21%;
+
+  background:#222121;
+  border-radius: 50%;
+
+  z-index: 2;
+}
+
+/* ===================================================
+   NÚMEROS DO GRÁFICO
+   =================================================== */
+
+.donut-label {
+  position: absolute;
+
+  z-index: 3;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1;
+  white-space: nowrap;
+
+  pointer-events: none;
+}
+
+/* ===================================================
+   AMARELA — 0,3%
+   Pequena fatia no topo
+   =================================================== */
+
+.label-amarela {
+  top: 5%;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+/* ===================================================
+   BRANCA — 36,8%
+   Fatia da direita
+   =================================================== */
+
+.label-branca {
+  top: 50%;
+  right: 3%;
+
+  transform: translateY(-50%);
+}
+
+/* ===================================================
+   INDÍGENA — 0,3%
+   Pequena fatia inferior
+   =================================================== */
+
+.label-indigena {
+  bottom: 15%;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+/* ===================================================
+   NEGRA — 62,6%
+   Grande fatia da esquerda
+   =================================================== */
+
+.label-negra {
+  top: 50%;
+  left: 3%;
+
+  transform: translateY(-50%);
+}
+
   /* =========================================================
      LEGENDA
   ========================================================= */
@@ -598,7 +738,7 @@
   
   
   .amarela {
-    background: #f43ac5;
+    background: #610044
   }
   
   
@@ -919,6 +1059,7 @@
     .faixa-etaria,
     .raca-cor {
       min-height: auto;
+      
     }
   
   
