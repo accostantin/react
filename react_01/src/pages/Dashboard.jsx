@@ -1,6 +1,13 @@
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import '../assets/css/dashboard.css'
+import {
+  Venus,
+  Hand,
+  Brain,
+  Eye,
+  TriangleAlert
+} from "lucide-react";
 
 function Dashboard() {
   return (
@@ -87,50 +94,46 @@ function Dashboard() {
           {/* ===================================================
               DADOS DE 2025
           =================================================== */}
+<section className="dashboard-card dados-2025">
+  <h2>
+    Feminicídios no ano de 2025
+  </h2>
 
-          <section className="dashboard-card dados-2025">
+  <div className="dado-item">
+    <span>1.492 Vítimas</span>
+    <span className="dado-icon">
+      <Venus />
+    </span>
+  </div>
 
-            <h2>
-              Feminicídios no ano de 2025
-            </h2>
+  <div className="dado-item">
+    <span>3.870 Tentativas</span>
+    <span className="dado-icon pequeno">
+      <Hand />
+    </span>
+  </div>
 
-            <div className="dado-item">
-              <span>1.492 Vítimas</span>
+  <div className="dado-item">
+    <span>51.886 Violências psicológicas</span>
+    <span className="dado-icon">
+      <Brain />
+    </span>
+  </div>
 
-              <span className="dado-icon">
-                ♀
-              </span>
-            </div>
+  <div className="dado-item">
+    <span>95.026 Stalking</span>
+    <span className="dado-icon">
+      <Eye />
+    </span>
+  </div>
 
-            <div className="dado-item">
-              <span>3.870 Tentativas</span>
-
-              <span className="dado-icon pequeno">
-                ♧
-              </span>
-            </div>
-
-            <div className="dado-item">
-              <span>51.886 Violências psicológicas</span>
-
-              <span className="dado-icon">
-                ♧
-              </span>
-            </div>
-
-            <div className="dado-item">
-              <span>95.026 Stalking</span>
-
-              <span className="dado-icon">
-                ⌁
-              </span>
-            </div>
-
-            <div className="dado-item">
-              <span>747.683 Ameaças</span>
-            </div>
-
-          </section>
+  <div className="dado-item">
+    <span>747.683 Ameaças</span>
+    <span className="dado-icon">
+      <TriangleAlert />
+    </span>
+  </div>
+</section>
 
 
           {/* ===================================================
@@ -496,8 +499,6 @@ function Dashboard() {
         </section>
 
       </main>
-
-
       <Footer />
 
     </div>
