@@ -37,25 +37,37 @@ function Dashboard() {
 
             <div className="bar-chart">
 
-              <div className="bar-area">
+            <div className="bar-area">
 
-                <div className="bar bar-1">
-                  <span>59,4%</span>
-                </div>
+  <div className="bar-item">
+    <div className="bar bar-1">
+      <span>59,4%</span>
+    </div>
+    <span className="bar-legenda">Companheiro</span>
+  </div>
 
-                <div className="bar bar-2">
-                  <span>21,3%</span>
-                </div>
+  <div className="bar-item">
+    <div className="bar bar-2">
+      <span>21,3%</span>
+    </div>
+    <span className="bar-legenda">Ex-companheiro</span>
+  </div>
 
-                <div className="bar bar-3">
-                  <span>10,2%</span>
-                </div>
+  <div className="bar-item">
+    <div className="bar bar-3">
+      <span>10,2%</span>
+    </div>
+    <span className="bar-legenda">Familiar</span>
+  </div>
 
-                <div className="bar bar-4">
-                  <span>4,8%</span>
-                </div>
+  <div className="bar-item">
+    <div className="bar bar-4">
+      <span>4,8%</span>
+    </div>
+    <span className="bar-legenda">Desconhecido</span>
+  </div>
 
-              </div>
+</div>
 
               <div className="bar-axis">
                 <span>60%</span>

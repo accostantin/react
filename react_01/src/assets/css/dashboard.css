@@ -123,27 +123,20 @@
     min-height: 300px;
   }
   
-  
   .bar-chart {
     position: relative;
-  
-    height: 220px;
-  
+    height: 245px;
     padding-left: 38px;
-  
     box-sizing: border-box;
   }
   
-  
+  /* Área onde ficam as barras */
   .bar-area {
     position: relative;
-  
     height: 200px;
   
     display: flex;
-  
     align-items: flex-end;
-  
     justify-content: space-evenly;
   
     gap: clamp(12px, 3vw, 40px);
@@ -159,18 +152,27 @@
     );
   }
   
+  /* Agrupa cada barra com sua legenda */
+  .bar-item {
+    position: relative;
   
+    height: 200px;
+  
+    flex: 0 1 75px;
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  /* Barras */
   .bar {
     position: relative;
   
     width: clamp(35px, 7vw, 75px);
   
-    flex: 0 1 75px;
-  
     display: flex;
-  
     justify-content: center;
-  
     align-items: flex-start;
   
     padding-top: 6px;
@@ -180,7 +182,6 @@
     color: #ffffff;
   
     font-family: Arial, sans-serif;
-  
     font-size: 9px;
   
     border-radius: 3px 3px 0 0;
@@ -190,60 +191,74 @@
       filter 0.2s ease;
   }
   
-  
-  .bar:hover {
-    transform: translateY(-4px);
-  
-    filter: brightness(1.12);
-  }
-  
-  
+  /* Valores corrigidos considerando o eixo 0%–60% */
   .bar-1 {
-    height: 88%;
-    background: #f43ac5;
+    height: 99%;
+    background: #f83fca;
   }
-  
   
   .bar-2 {
-    height: 35%;
-    background: #ce1680;
+    height: 35.5%;
+    background: #dc168a;
   }
-  
   
   .bar-3 {
     height: 17%;
-    background: #8d075c;
+    background: #a90779;
   }
-  
   
   .bar-4 {
-    height: 4,8%;
-    background: #57033e;
+    height: 8%;
+    background: #610044;
   }
   
+  /* Valor escrito dentro da barra */
+  .bar span {
+    display: block;
+    white-space: nowrap;
+  }
   
+  /* Legenda abaixo da barra */
+  .bar-legenda {
+    position: absolute;
+  
+    bottom: -34px;
+  
+    width: 120px;
+  
+    text-align: center;
+  
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.2;
+  
+    color: #bdbdbd;
+  }
+  
+  /* Efeito hover */
+  .bar:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.12);
+  }
+  
+  /* Eixo lateral */
   .bar-axis {
     position: absolute;
   
     left: 0;
-  
     top: 0;
   
     height: 200px;
   
     display: flex;
-  
     flex-direction: column;
-  
     justify-content: space-between;
   
     font-family: Arial, sans-serif;
-  
     font-size: 8px;
   
     color: #bdbdbd;
   }
-  
   
   /* =========================================================
      DADOS 2025
@@ -437,12 +452,12 @@
   
   .bar-idade-1 {
     width: 4.3%;
-    background: #f8a3df;
+    background: #d673b8;
   }
   
   .bar-idade-2 {
     width: 12.7%;
-    background: #f8a3df;
+    background: #d673b8;
   }
   
   .bar-idade-3 {
@@ -467,12 +482,12 @@
   
   .bar-idade-7 {
     width: 31.3%;
-    background: #f8a3df;
+    background: #d673b8;
   }
   
   .bar-idade-8 {
     width: 16.7%;
-    background: #f8a3df;
+    background: #d673b8;
   }
   
   
@@ -603,10 +618,10 @@
      62,6% Negra
   */
   background: conic-gradient(
-    #ff00a8 0% 0.9%,       /* Amarela — 0,3% */
-    #f6a3d8 0.3% 37.1%,   /* Branca — 36,8% */
-    #8b0057 37.1% 37.9%,  /* Indígena — 0,3% */
-    #d5007f 37.4% 100%    /* Negra — 62,6% */
+    #d5007f 0% 0.9%,       /* Amarela — 0,3% */
+    #d673b8 0.3% 37.1%,   /* Branca — 36,8% */
+    #d5007f 37.1% 37.9%,  /* Indígena — 0,3% */
+    #610044 37.4% 100%    /* Negra — 62,6% */
   );
 }
 
@@ -1165,7 +1180,30 @@
   
       font-size: 7px;
     }
-  
+    .bar-item {
+      position: relative;
+      height: 200px;
+      flex: 0 1 75px;
+    
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    
+    .bar-legenda {
+      position: absolute;
+      bottom: -32px;
+    
+      width: 110px;
+    
+      text-align: center;
+    
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      line-height: 1.2;
+    
+      color: #bdbdbd;
+    }
   
     /* Dados */
   
@@ -1309,9 +1347,25 @@
   
   
     .bar-area {
-      gap: 5px;
+      position: relative;
+      height: 250px;
+    
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+    
+      gap: clamp(12px, 3vw, 40px);
+    
+      border-bottom: 1px solid #777;
+    
+      background-image: repeating-linear-gradient(
+        to top,
+        transparent 0,
+        transparent 32px,
+        rgba(255, 255, 255, 0.35) 33px,
+        transparent 34px
+      );
     }
-  
   
     .idade-linha {
       grid-template-columns:
