@@ -182,7 +182,7 @@ nav a.ativo {
   border: none;
   outline: none;
   background: transparent;
-  font-size: clamp(1.1rem, 1.7vw, 1.65rem);
+  font-size:  1.08rem;
   color: #490839;
 }
 
@@ -252,7 +252,7 @@ nav a.ativo {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
-  padding-bottom: 40px;
+  padding-bottom: 68px;
 }
 
 .noticias-card {
@@ -959,6 +959,7 @@ nav a.ativo {
     max-width: 1006px;
     text-align:justify;
     padding-bottom: 65px;
+    margin-top: 18px;
 }
 
 .roxo-text {
@@ -1010,6 +1011,7 @@ nav a.ativo {
   color: #fff;
   font: 700 16px Arial, sans-serif;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .Header_Ajuda-Container {
@@ -1029,7 +1031,7 @@ nav a.ativo {
 
 .Header_Ajuda-Titulo {
   color: #FFA7EC;
-  font: 700 30px Georgia, 'Times New Roman', serif;
+  font: 700 30px 'Vexa-font', sans-serif;
   margin-bottom: 10px
 }
 
@@ -1112,7 +1114,7 @@ nav a.ativo {
 
 .painel-projeto2 .botao-ajuda{
   height: 30px;
-    width: 156px;
+   width: 190px;
    margin-left: 24px;
   border: 1px solid #075d73;
   border-radius: 5px;
@@ -1255,7 +1257,6 @@ nav a.ativo {
   color: #ee59c7;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 48px;
-  letter-spacing: 0.3px;
   text-align: justify;
 }
 
@@ -1264,7 +1265,6 @@ nav a.ativo {
   margin: 0;
   color: #d8d1da;
   font: 18px/1.65 Arial, sans-serif;
-  letter-spacing: 0.3px;
   text-align: justify;
 }
 
@@ -1272,7 +1272,7 @@ nav a.ativo {
 .diretorio-completo {
   background: #242323;
   color: #e8e1e6;
-  padding: 42px 40px 60px;
+  padding: 42px 40px 0px;
 }
 
 
@@ -1328,7 +1328,7 @@ nav a.ativo {
   color: #f5f1f4;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 30px;
-  line-height: 1;
+ 
  
   font-weight: 700;
 }
@@ -1338,7 +1338,6 @@ nav a.ativo {
   color: #ffffff;
   text-align: justify;
   font-family: Georgia, 'Times New Roman', serif;
-  letter-spacing: -0.04em;
   font-weight: 700;
 }
 
@@ -1355,6 +1354,95 @@ nav a.ativo {
   opacity: 0.9;
    margin-right: 833px;
   
+}
+
+.protecao-completo {
+  padding: 44px 40px 40px;
+  background: #323232;
+  color: #e8e1e6;
+  text-align: left;
+}
+
+.protecao-aviso {
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  background: #242323;
+}
+
+.protecao-icone {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 28px;
+  stroke: #ee59c7;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.protecao-aviso h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.protecao-aviso p {
+  max-width: 900px;
+  color: #d6d0d5;
+  font: 16px/1.6 Arial, sans-serif;
+}
+
+.protecao-conteudo {
+  margin-top: 62px;
+}
+
+.protecao-label {
+  color: #ee59c7;
+  font: 700 15px/1.4 Arial, sans-serif;
+}
+
+.protecao-conteudo h2 {
+  margin: 12px 0 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.2;
+}
+
+.protecao-lista {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.protecao-item {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  margin: 0;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: #d6d0d5;
+  font: 16px/1.6 Arial, sans-serif;
+}
+
+.protecao-item::before {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 1px;
+  background: #ee59c7;
+  content: '';
+}
+
+.protecao-item strong {
+  flex: 0 0 auto;
+  color: #ffffff;
+}
+
+.protecao-item:last-child {
+  border-bottom: 0;
 }
 
 @media (max-width: 640px) {
@@ -1393,5 +1481,22 @@ nav a.ativo {
   .diretorio-introducao,
   .diretorio-detalhes p {
     font-size: 16px;
+  }
+
+  .protecao-completo {
+    padding: 32px 16px 40px;
+  }
+
+  .protecao-aviso {
+    padding: 24px 20px;
+  }
+
+  .protecao-conteudo {
+    margin-top: 48px;
+  }
+
+  .protecao-item {
+    flex-wrap: wrap;
+    gap: 4px 8px;
   }
 }

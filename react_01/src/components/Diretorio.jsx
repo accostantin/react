@@ -1,6 +1,7 @@
 function Diretorio() {
+
   return (
-        <section className="diretorio-completo">
+        <section id="diretorio" className="diretorio-completo">
                     <p className="diretorio-label">Diretório completo</p>
                     <h2>Todos os canais, organizados por tipo.</h2>
                     <p className="diretorio-introducao">Se um canal estiver ocupado ou não for a opção certa para o seu caso, há sempre outro caminho.</p>

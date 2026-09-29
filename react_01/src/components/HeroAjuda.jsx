@@ -1,4 +1,8 @@
 function HeroAjuda () {
+  function handleVerTodosOsCanais() {
+    document.getElementById('diretorio')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
     return (
     <section className="hero-ajuda">
       <div className="hero-ajuda-conteudo">
@@ -12,8 +16,8 @@ function HeroAjuda () {
 
          <div className="painel-projeto2" aria-label="Conteudos-ajuda">
           <div className="linha-tecnologias2">
-            <button className="botao-ajuda" type="button">Denunciar</button>
-            <button className="botao-ajuda2" type="button">Denunciar</button>
+            <button className="botao-ajuda" type="button">Emergência: ligar 190</button>
+            <button className="botao-ajuda2" type="button" onClick={handleVerTodosOsCanais}>Ver todos os canais</button>
           </div>
         </div>
          <div className="conteudos-underline3"></div>

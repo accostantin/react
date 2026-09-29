@@ -3,7 +3,7 @@ function Header_Ajuda() {
     <header className="Header_Ajuda">
       <div className="Header_Ajuda-Aviso">
         <p className="Header_Ajuda-Mensagem">Precisa denunciar agora? Ligue <strong>180</strong> - sigiloso, gratuito, 24h</p>
-        <button className="Header_Ajuda-Sair" type="button">Sair rápido</button>
+        <a className="Header_Ajuda-Sair" href="/lado-a">Voltar Pagina Principal</a>
       </div>
 
       <div className="Header_Ajuda-Container">
