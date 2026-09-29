@@ -1,20 +1,16 @@
-
 import { Link } from 'react-router-dom';
 
 function ButtonLadoA() {
   return (
     <div className="btn">
       <Link
-        to="/lado-b"
+        to="/cadastro"
         className="btn-ladob"
-        target="_self"
-        rel="noopener noreferrer"
       >
-        Lado A
+        Lado B
       </Link>
     </div>
   );
 }
 
 export default ButtonLadoA;
-

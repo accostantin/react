@@ -1,39 +1,44 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-import LadoA from './pages/lado-a.jsx'
-import LadoB from './pages/ladob.jsx'
-import LadoBAcessorios from './pages/lado-b-acessorios.jsx'
-import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx'
-import LadoBContato from './pages/lado-b-contato.jsx'
-import LadoBSobre from './pages/lado-b-sobre.jsx'
-import Dashboard from './pages/Dashboard.jsx'
+import LadoA from './pages/lado-a.jsx';
+import LadoB from './pages/ladob.jsx';
+import LadoBAcessorios from './pages/lado-b-acessorios.jsx';
+import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx';
+import LadoBContato from './pages/lado-b-contato.jsx';
+import LadoBSobre from './pages/lado-b-sobre.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import Cadastro from './pages/cadastro.jsx';
+import Entrar from './pages/entrar.jsx';
 
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-import './App.css'
+import './App.css';
 
 function App() {
 
   const [favoritos, setFavoritos] = useState(() => {
     try {
-      const salvos = localStorage.getItem('favoritos')
-      return salvos ? JSON.parse(salvos) : []
+      const salvos = localStorage.getItem('favoritos');
+      return salvos ? JSON.parse(salvos) : [];
     } catch {
-      return []
+      return [];
     }
-  })
+  });
 
   useEffect(() => {
-    localStorage.setItem('favoritos', JSON.stringify(favoritos))
-  }, [favoritos])
+    localStorage.setItem(
+      'favoritos',
+      JSON.stringify(favoritos)
+    );
+  }, [favoritos]);
 
   const toggleFavorito = (id) => {
     setFavoritos((prev) =>
       prev.includes(id)
         ? prev.filter((fav) => fav !== id)
         : [...prev, id]
-    )
-  }
+    );
+  };
 
   return (
     <div className="App">
@@ -46,6 +51,18 @@ function App() {
           <Route
             path="/lado-a"
             element={<LadoA />}
+          />
+
+          {/* Cadastro */}
+          <Route
+            path="/cadastro"
+            element={<Cadastro />}
+          />
+
+          {/* Entrar */}
+          <Route
+            path="/entrar"
+            element={<Entrar />}
           />
 
           {/* Lado B */}
@@ -103,11 +120,13 @@ function App() {
             }
           />
 
-<Route
-  path="/lado-b/dashboard"
-  element={<Dashboard />}
-/>
-          {/* Rota padrão */}
+          {/* Dashboard */}
+          <Route
+            path="/lado-b/dashboard"
+            element={<Dashboard />}
+          />
+
+          {/* Qualquer rota inexistente */}
           <Route
             path="*"
             element={<Navigate to="/lado-b" replace />}
@@ -118,7 +137,8 @@ function App() {
       </main>
 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
