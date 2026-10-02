@@ -48,6 +48,7 @@ function Cadastro() {
       JSON.stringify(usuariosSalvos)
     );
 
+    // Marca o usuário como logado
     localStorage.setItem(
       "usuarioLogado",
       JSON.stringify(novoUsuario)
@@ -55,8 +56,8 @@ function Cadastro() {
 
     alert("Conta criada com sucesso!");
 
-    // Depois de criar a conta, vai para o Lado B
-    navigate("/lado-b");
+    // VAI DIRETAMENTE PARA O LADO A
+    navigate("/lado-a", { replace: true });
   }
 
   return (
@@ -70,7 +71,6 @@ function Cadastro() {
       <div className="bolha bolha-6"></div>
 
       <section className="cadastro-container">
-
         <div className="cadastro-card">
 
           <h1>Criar conta</h1>
@@ -163,7 +163,6 @@ function Cadastro() {
           </p>
 
         </div>
-
       </section>
 
     </main>
@@ -171,4 +170,3 @@ function Cadastro() {
 }
 
 export default Cadastro;
-

@@ -1,24 +1,27 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-import LadoA from './pages/lado-a.jsx';
-import LadoB from './pages/ladob.jsx';
-import LadoBAcessorios from './pages/lado-b-acessorios.jsx';
-import LadoBNovaColecao from './pages/lado-b-nova-colecao.jsx';
-import LadoBContato from './pages/lado-b-contato.jsx';
-import LadoBSobre from './pages/lado-b-sobre.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import Cadastro from './pages/cadastro.jsx';
-import Entrar from './pages/entrar.jsx';
+import {
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
 
-import { Routes, Route, Navigate } from 'react-router-dom';
+import LadoA from "./pages/lado-a.jsx";
+import LadoB from "./pages/ladob.jsx";
+import LadoBAcessorios from "./pages/lado-b-acessorios.jsx";
+import LadoBNovaColecao from "./pages/lado-b-nova-colecao.jsx";
+import LadoBContato from "./pages/lado-b-contato.jsx";
+import LadoBSobre from "./pages/lado-b-sobre.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Cadastro from "./pages/cadastro.jsx";
+import Entrar from "./pages/entrar.jsx";
 
-import './App.css';
+import "./App.css";
 
 function App() {
-
   const [favoritos, setFavoritos] = useState(() => {
     try {
-      const salvos = localStorage.getItem('favoritos');
+      const salvos = localStorage.getItem("favoritos");
       return salvos ? JSON.parse(salvos) : [];
     } catch {
       return [];
@@ -27,7 +30,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem(
-      'favoritos',
+      "favoritos",
       JSON.stringify(favoritos)
     );
   }, [favoritos]);
@@ -46,6 +49,12 @@ function App() {
       <main className="conteudo-principal">
 
         <Routes>
+
+          {/* Página inicial */}
+          <Route
+            path="/"
+            element={<Navigate to="/lado-b" replace />}
+          />
 
           {/* Lado A */}
           <Route
@@ -128,10 +137,9 @@ function App() {
 
           {/* Qualquer rota inexistente */}
           <Route
-            path="*"
-            element={<Navigate to="/lado-b" replace />}
-          />
-
+  path="*"
+  element={<Navigate to="/lado-a" replace />}
+/>
         </Routes>
 
       </main>
@@ -141,4 +149,3 @@ function App() {
 }
 
 export default App;
-

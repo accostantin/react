@@ -1,22 +1,19 @@
 import { useState } from "react";
 
-import Header from '../components/header.jsx';
-import Button from '../components/ButtonLadoA.jsx';
-import Sidebar from '../components/Sidebar.jsx';
-import Banner from '../components/Banner.jsx';
-import Home from '../components/Home.jsx';
-import ProfileSection from '../components/ProfileSection.jsx';
-import Footer from '../components/Footer.jsx';
+import Header from "../components/header.jsx";
+import Sidebar from "../components/Sidebar.jsx";
+import Banner from "../components/Banner.jsx";
+import Home from "../components/Home.jsx";
+import ProfileSection from "../components/ProfileSection.jsx";
+import Footer from "../components/Footer.jsx";
 
-import '../App.css';
+import "../App.css";
 
 function LadoA() {
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-
       <Header
         onMenuClick={() => setIsOpen(true)}
       />
@@ -33,7 +30,6 @@ function LadoA() {
       <ProfileSection />
 
       <Footer />
-
     </div>
   );
 }
